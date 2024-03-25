@@ -12,34 +12,41 @@
 <body <?php body_class(); ?>>
     <?php wp_body_open() ?>
     <header>
-        <span>Samba</span>
+
         <nav class="navigation navigation-bar">
+            <h1 class="logo">
+                Samba
+                <span>SENE</span>
+            </h1>
+
             <?php wp_nav_menu(array(
                 'theme_location' => 'main menu',
                 'menu_class' => 'register-menu'
             ))
             ?>
-        </nav>
 
-        <nav class="navigation navigation-social">
-            <ul>
-                <li>
-                    <a href="http://">
-                        <i class="fa fa-github" aria-hidden="true"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="http://">
-                        <i class="fa fa-facebook" aria-hidden="true"></i>
-                    </a>
 
-                </li>
-                <li>
-                    <a href="http://">
-                        <i class="fa fa-linkedin" aria-hidden="true"></i>
-                    </a>
+</nav>
+<ul class="navigation navigation-social">
+    <li>
+        <a href="http://">
+            <i class="fa fa-github" aria-hidden="true"></i>
+        </a>
+    </li>
+    <li>
+        <a href="http://">
+            <i class="fa fa-facebook" aria-hidden="true"></i>
+        </a>
 
-                </li>
-            </ul>
-        </nav>
+    </li>
+    <li>
+        <a href="http://">
+            <i class="fa fa-linkedin" aria-hidden="true"></i>
+        </a>
+
+    </li>
+</ul>
+
+
+
     </header>
