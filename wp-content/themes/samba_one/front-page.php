@@ -1,65 +1,41 @@
 <?php get_header(); ?>
 
-<section class="contents  banner">
-    <article class="content-banner">
-        <?php if (have_posts()) :
+<aside>
 
-            while (have_posts()) : the_post(); ?>
+</aside>
+<section class="contents banner">
+    <article class="post post-content-banner ">
+        <h1>Samba<span class="special">.</span></h1>
+        <p>développeur  <br> web<span class="special"> & </span> mobile </p>
+        <a href="http//" class="btn">Me Contacter</a>
+        <ul class="navigation navigation-social">
+                <li>
+                    <a href="http://">
+                        <i class="fa fa-github" aria-hidden="true"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="http://">
+                        <i class="fa fa-facebook" aria-hidden="true"></i>
+                    </a>
 
+                </li>
+                <li>
+                    <a href="http://">
+                        <i class="fa fa-linkedin" aria-hidden="true"></i>
+                    </a>
 
-
-                <?php the_content(); ?>
-
-                <a class="btn btn-contact" href="http://">Me Contacter</a>
-
-
-        <?php
-            endwhile;
-
-        endif; ?>
-
+                </li>
+            </ul>
     </article>
-    <article class="picture"></article>
-
-
-</section>
-
-<!-- <i class="fa fa-opera"></i> -->
-<section class="contents a-propos">
-    <h2 class="title-item"> A PROPOS</h2>
-
-    <article class="the-content">
- 
     <article class="picture">
-            <!-- <img src="https://images.unsplash.com/photo-1710403690356-e651c9730491?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="tasse de cafe" srcset=""> -->
-        </article>
-        <?php
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/banner-img.png" alt="">
 
-        $arg = array(
-            'post_type' => 'post',
-            'category_name' => 'a-propos',
-            'posts_per_page' => 1,
-            'name' => 'a-propos' // correspond au  slug de l'article
-        );
-
-        $wp_query = new WP_Query($arg); ?>
-
-        <article class="item">
-
-            <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-
-                    <div><?php the_content(); ?></div>
-                    
-
-            <?php endwhile;
-            endif; ?>
-
-        </article>
-        
-        
     </article>
 
+
 </section>
+
 
 
 

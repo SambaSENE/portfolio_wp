@@ -24,28 +24,7 @@
                 'menu_class' => 'register-menu'
             ))
             ?>
-
-
-</nav>
-<ul class="navigation navigation-social">
-    <li>
-        <a href="http://">
-            <i class="fa fa-github" aria-hidden="true"></i>
-        </a>
-    </li>
-    <li>
-        <a href="http://">
-            <i class="fa fa-facebook" aria-hidden="true"></i>
-        </a>
-
-    </li>
-    <li>
-        <a href="http://">
-            <i class="fa fa-linkedin" aria-hidden="true"></i>
-        </a>
-
-    </li>
-</ul>
+        </nav>
 
 
 
