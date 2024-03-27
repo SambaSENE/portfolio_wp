@@ -13,11 +13,11 @@
     <?php wp_body_open() ?>
     <header>
 
+        <h1 class="logo">
+            Samba
+            <span>SENE</span>
+        </h1>
         <nav class="navigation navigation-bar">
-            <h1 class="logo">
-                Samba
-                <span>SENE</span>
-            </h1>
 
             <?php wp_nav_menu(array(
                 'theme_location' => 'main menu',
